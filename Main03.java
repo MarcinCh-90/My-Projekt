@@ -1,12 +1,13 @@
-package pl.coderslab.apierwszyprogram;
+package pl.coderslab.dtablice;
 
 public class Main03 {
 
 	public static void main(String[] args) {
-		System.out.println("Dzisiaj zaczynam kurs");
-		System.out.println("JAVA");
-		System.out.println("w CodersLab");
-
+		int[] numbers = {4, 643, 112, 9999, 69};
+		int sum = 0;
+		for (int i = 0; i < numbers.length; i++) {
+			sum += numbers[i];
+		}
+		System.out.println(sum);
 	}
-
 }

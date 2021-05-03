@@ -1,11 +1,21 @@
-package pl.coderslab.apierwszyprogram;
+package pl.coderslab.dtablice;
 
 public class Main04 {
-    public static void main(String[] args) {
-        System.out.println("   J    a   v     v  a ");
-        System.out.println("   J   a a   v   v  a a");
-       // System.out.println("J  J  aaaaa   V V  aaaaa");
-        System.out.println("J  J  aaaaa   V V  aaaaa");
-        System.out.println(" JJ  a     a   V  a     a");
-    }
+
+	public static void main(String[] args) {
+		int[] numbers = {4, 643, 112, 9999, 69};
+		//int sum = 0;
+		int sumOdd = 0;
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] % 2 == 0) {
+				System.out.println(numbers[i]);
+				continue;}
+				sumOdd += numbers[i];
+			}
+		System.out.println("Suma:" + sumOdd);
+	}
 }
+
+
+
+
